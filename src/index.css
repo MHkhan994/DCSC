@@ -41,12 +41,3 @@ body{
     border-radius: 10px;
 }
 
-
-
-/* ================banner========== */
-.banner{
-    background-image: url('./assets//Banner//banner-bg.png');
-    background-repeat: no-repeat;
-    background-size: 100% 900px;
-    margin: 0 auto;
-}
