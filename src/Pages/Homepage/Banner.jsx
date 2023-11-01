@@ -18,7 +18,7 @@ const Banner = () => {
     const photos = [banner1, banner2, banner3, banner4]
 
     return (
-        <div className='min-h-screen banner pt-64'>
+        <div className='banner pt-64'>
             <div className='my-container'>
                 <h1 className='font-lora z-50 text-white text-center font-bold md:text-8xl text-6xl md:leading-[108px]'>DHAKA COLLEGE <br></br> SCIENCE CLUB</h1>
             </div>
@@ -59,7 +59,7 @@ const Banner = () => {
                     <HiOutlineArrowLongLeft />
                 </div>
             </div>
-            {/* <img src={gradient} className='absolute lg:h-fit z-0 lg:w-screen h-screen w-fit top-0 left-0' alt="" /> */}
+            <img src={gradient} className='absolute max-h-[1200px] lg:h-fit z-0 lg:w-screen h-screen w-fit top-0 left-0' alt="" />
         </div >
     );
 };

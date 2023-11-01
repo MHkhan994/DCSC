@@ -12,7 +12,7 @@ const Navbar = () => {
                     <NavLink className={({ isActive }) => isActive ? 'color-nav' : ''} to={'gallery'}>gallery</NavLink>
                 </ul>
                 <div>
-                    <button className="btn-pri">
+                    <button className="btn-pri text-lg">
                         Ongoing event
                     </button>
                 </div>

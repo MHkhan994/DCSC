@@ -12,6 +12,10 @@
     --color-bg:#041551;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .bg-navy{
     background-color: var(--color-bg);
 }
@@ -33,7 +37,7 @@
 }
 
 .btn-pri{
-    @apply bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] px-8 py-3 text-lg font-medium text-white;
+    @apply bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] px-8 py-3 font-medium text-white;
     border-radius: 10px;
 }
 
