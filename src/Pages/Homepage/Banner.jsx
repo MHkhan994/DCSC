@@ -1,14 +1,66 @@
-import banner from '../../assets/Banner/banner.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import gradient from '../../assets/gradient.png'
 
+import { HiOutlineArrowLongLeft, HiOutlineArrowLongRight } from 'react-icons/hi2'
+
+import banner1 from '../../assets/Banner/banner1.png'
+import banner2 from '../../assets/Banner/banner2.png'
+import banner3 from '../../assets/Banner/banner3.png'
+import banner4 from '../../assets/Banner/banner4.png'
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+
 const Banner = () => {
+
+    const photos = [banner1, banner2, banner3, banner4]
+
     return (
-        <div className='min-h-screen banner pt-64 relative'>
-            <img src={gradient} className='absolute lg:h-fit z-10 lg:w-screen h-screen w-fit top-0 left-0' alt="" />
-            <div className='my-container z-20'>
-                <h1 className='font-lora text-white text-center font-bold text-8xl leading-[108px]'>DHAKA COLLEGE <br></br> SCIENCE CLUB</h1>
+        <div className='min-h-screen banner pt-64'>
+            <div className='my-container'>
+                <h1 className='font-lora z-50 text-white text-center font-bold md:text-8xl text-6xl md:leading-[108px]'>DHAKA COLLEGE <br></br> SCIENCE CLUB</h1>
             </div>
-        </div>
+            <div className='swiper-wrapper relative'>
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    loop={true}
+                    navigation={{
+                        nextEl: ".button-next",
+                        prevEl: ".button-prev"
+                    }}
+                    breakpoints={{
+                        1200: {
+                            slidesPerView: 3,
+                        },
+                        800: {
+                            slidesPerView: 2,
+                        },
+                        0: {
+                            slidesPerView: 1,
+                        },
+                    }}
+                    modules={[Navigation]}
+                    className='mySwiper z-30 mt-32'
+                >
+                    {
+                        photos.map(ph => <SwiperSlide key={ph} className='min-h-[600px]'>
+                            <img src={ph} alt="" className='h-[500px] w-full object-cover rounded-lg' />
+                        </SwiperSlide>)
+                    }
+
+                </Swiper>
+                <div className='button-next text-white w-[93px] h-[53px] absolute rounded-lg border border-white right-16 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                    <HiOutlineArrowLongRight />
+                </div>
+                <div className='button-next text-white w-[93px] h-[53px] absolute rounded-lg border border-white left-16 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                    <HiOutlineArrowLongLeft />
+                </div>
+            </div>
+            {/* <img src={gradient} className='absolute lg:h-fit z-0 lg:w-screen h-screen w-fit top-0 left-0' alt="" /> */}
+        </div >
     );
 };
 
