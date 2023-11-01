@@ -52,10 +52,10 @@ const Banner = () => {
                     }
 
                 </Swiper>
-                <div className='button-next text-white w-[93px] h-[53px] absolute rounded-lg border border-white right-16 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                <div className='button-next text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:right-16 right-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
                     <HiOutlineArrowLongRight />
                 </div>
-                <div className='button-next text-white w-[93px] h-[53px] absolute rounded-lg border border-white left-16 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                <div className='button-next text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:left-16 left-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
                     <HiOutlineArrowLongLeft />
                 </div>
             </div>
