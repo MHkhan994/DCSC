@@ -44,8 +44,21 @@ const Event = () => {
                         modifier: 2.5
                     }}
                     navigation={{
-                        nextEl: ".button-next",
-                        prevEl: ".button-prev"
+                        nextEl: ".button-next-event",
+                        prevEl: ".button-prev-event"
+                    }}
+                    breakpoints={{
+                        320: {
+                            spaceBetween: 20,
+                        },
+                        // When window width is >= 640px
+                        640: {
+                            spaceBetween: 50,
+                        },
+                        // When window width is >= 992px
+                        992: {
+                            spaceBetween: 80,
+                        },
                     }}
                     modules={[Autoplay, Navigation, EffectCoverflow]}
                     style={{ height: 'auto' }}
@@ -53,10 +66,10 @@ const Event = () => {
                 >
                     {
                         slides.map(s => <SwiperSlide className='img-slider' key={s}>
-                            <div className='h-[560px] bg-[#1C2069] rounded-2xl space-y-8 p-[24px]'>
+                            <div className='bg-[#1C2069] rounded-2xl p-[24px]'>
                                 <img src={eventCardbg} alt="" />
-                                <h1 className='font-lora text-[#FFD707] font-bold text-2xl'>DCSC Event Photography Program</h1>
-                                <div className='flex justify-between items-end'>
+                                <h1 className='font-lora pt-8 pb-3 text-[#FFD707] font-bold text-2xl'>DCSC Event Photography Program</h1>
+                                <div className='flex justify-between items-end pb-3'>
                                     <p className='text-lg font-md text-white'>18-10-2023 to 20-10-2023</p>
                                     <button className='h-10 w-10 bg-blue-600 flex justify-center items-center'>
                                         <BsArrowUpRight className='text-white text-xl'></BsArrowUpRight>
@@ -67,10 +80,10 @@ const Event = () => {
                     }
                 </Swiper>
                 <div className='flex justify-center gap-10'>
-                    <div className='button-next hover:bg-blue-600 hover:border-transparent text-white w-[93px] h-[53px] rounded-lg border border-white flex justify-center items-center cursor-pointer text-4xl'>
+                    <div className='button-next-event hover:bg-blue-600 hover:border-transparent text-white w-[93px] h-[53px] rounded-lg border border-white flex justify-center items-center cursor-pointer text-4xl'>
                         <HiOutlineArrowLongLeft />
                     </div>
-                    <div className='button-prev hover:bg-blue-600 hover:border-transparent text-white w-[93px] h-[53px] rounded-lg border border-white flex justify-center items-center cursor-pointer text-4xl'>
+                    <div className='button-prev-event hover:bg-blue-600 hover:border-transparent text-white w-[93px] h-[53px] rounded-lg border border-white flex justify-center items-center cursor-pointer text-4xl'>
                         <HiOutlineArrowLongRight />
                     </div>
                 </div>

@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import gradient from '../../assets/gradient.png'
 
 import { HiOutlineArrowLongLeft, HiOutlineArrowLongRight } from 'react-icons/hi2'
 
@@ -18,7 +17,7 @@ const Banner = () => {
     const photos = [banner1, banner2, banner3, banner4]
 
     return (
-        <div className='banner pt-64'>
+        <div className='banner pt-64 relative'>
             <div className='my-container'>
                 <h1 className='font-lora z-50 text-white text-center font-bold md:text-8xl text-6xl md:leading-[108px]'>DHAKA COLLEGE <br></br> SCIENCE CLUB</h1>
             </div>
@@ -28,8 +27,8 @@ const Banner = () => {
                     slidesPerView={3}
                     loop={true}
                     navigation={{
-                        nextEl: ".button-next-2",
-                        prevEl: ".button-prev-2"
+                        nextEl: ".button-next-banner",
+                        prevEl: ".button-prev-banner"
                     }}
                     breakpoints={{
                         1200: {
@@ -52,14 +51,16 @@ const Banner = () => {
                     }
 
                 </Swiper>
-                <div className='button-next-2 text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:right-16 right-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                <div className='button-next-banner text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:right-16 right-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
                     <HiOutlineArrowLongRight />
                 </div>
-                <div className='button-prev-2 text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:left-16 left-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                <div className='button-prev-banner text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:left-16 left-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
                     <HiOutlineArrowLongLeft />
                 </div>
             </div>
-            <img src={gradient} className='absolute max-h-[1200px] lg:h-fit z-0 lg:w-screen h-screen w-fit top-0 left-0' alt="" />
+            <div className='gradient h-[80%] w-[70%] absolute top-0 left-0'></div>
+            {/* ============gradinet div======= */}
+
         </div >
     );
 };

@@ -7,6 +7,8 @@
 }
 
 
+
+
 /* ============event=========== */
 .event-container{
     background-image: url('../../assets/event/eventBg.png');
@@ -17,6 +19,36 @@
 
 /* ==========event========= */
 .img-slider{
-    width: 22rem !important;
+    width: 24rem !important;
     margin-bottom: 40px !important;
 }
+
+@media screen and (max-width:676px) {
+    .img-slider{
+        width: 20rem !important;
+    }
+
+    .banner{
+        background-size: cover ;
+        background-position: center;
+    }
+}
+
+.gradient {
+    background: linear-gradient(121deg, rgba(72, 166, 219, 0.50) -3.09%, rgba(0, 216, 86, 0.50) 99.95%);
+    filter: blur(150px); 
+  }
+
+
+/* ==========gallery======= */
+.gallery-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
