@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color-teal: #00BBC7;
+    --color-nav:#1ED2DD;
+    --color-blue: #4C6CDC;
+    --color-bg:#041551;
+}
+
+.bg-navy{
+    background-color: var(--color-bg);
+}
+
+.fort-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-lora{
+    font-family: 'Lora', serif;
+}
+
+.color-nav{
+    color: var(--color-nav);
+}
+
+.my-container{
+    @apply lg:w-[80vw] mx-auto max-w-[1300px]
+}
+
+.btn-pri{
+    @apply bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] px-8 py-3 text-lg font-medium text-white;
+    border-radius: 10px;
+}
+
+
+
+/* ================banner========== */
+.banner{
+    background-image: url('./assets//Banner//banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
