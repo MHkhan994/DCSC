@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="absolute top-0 left-0 w-full z-20">
+        <nav className="absolute top-0 left-0 w-full z-20" data-aos="fade-down">
             <div className="my-container py-11 lg:flex justify-between items-center hidden">
                 <img src="./logo.png" className="h-28" alt="" />
                 <ul className="font-poppins font-semibold flex gap-10 text-white text-lg">

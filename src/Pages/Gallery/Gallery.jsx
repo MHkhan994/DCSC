@@ -13,6 +13,7 @@ import gallery12 from '../../assets/Gallery/gallery12.png'
 import gallery13 from '../../assets/Gallery/gallery13.png'
 import gallery14 from '../../assets/Gallery/gallery14.png'
 import gallery15 from '../../assets/Gallery/gallery15.png'
+import { Helmet } from 'react-helmet-async'
 
 const Gallery = () => {
 
@@ -20,9 +21,12 @@ const Gallery = () => {
 
     return (
         <div className="lg:pt-64 pt-44">
+            <Helmet>
+                <title>Gallery - DCSC</title>
+            </Helmet>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 my-container'>
                 {
-                    gallery.map(img => <img key={img} className='w-full' src={img}></img>)
+                    gallery.map(img => <img data-aos="fade-up" data-aos-duration="1000" key={img} className='w-full' src={img}></img>)
                 }
             </div>
             <button className="btn-pri block mx-auto my-20">Load More</button>

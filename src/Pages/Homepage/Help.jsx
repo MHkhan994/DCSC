@@ -4,7 +4,7 @@ import SectionTop from '../../components/SectionTop';
 const Help = () => {
     return (
         <section className="lg:py-40 py-20 my-container">
-            <div className='lg:h-[350px] h-[400px] w-full border-4 rounded-3xl relative'>
+            <div data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200" className='lg:h-[350px] h-[400px] w-full border-4 rounded-3xl relative'>
                 <img src={helpbg} className='h-full rounded-3xl object-cover w-full' alt="" />
 
                 <div className='absolute top-0 left-0 h-full w-full rounded-3xl flex flex-col justify-center items-center gap-14'>

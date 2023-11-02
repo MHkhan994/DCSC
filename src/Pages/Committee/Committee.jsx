@@ -2,6 +2,7 @@ import committee from '../../committee.json'
 import { useState } from "react";
 import SectionTop from "../../components/SectionTop";
 import ComCard from './ComCard';
+import { Helmet } from 'react-helmet-async';
 
 const Committee = () => {
 
@@ -9,6 +10,9 @@ const Committee = () => {
 
     return (
         <div className="lg:pt-64 pb-20 pt-44">
+            <Helmet>
+                <title>Committee - DCSC</title>
+            </Helmet>
             <SectionTop
                 heading={"Executive Committee 2023"}
                 subhaeading={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when"}

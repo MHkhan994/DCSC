@@ -43,6 +43,7 @@ const Banner = () => {
                     }}
                     modules={[Navigation]}
                     className='mySwiper z-30 mt-32'
+                    data-aos="fade-up"
                 >
                     {
                         photos.map(ph => <SwiperSlide key={ph} className='min-h-[600px]'>

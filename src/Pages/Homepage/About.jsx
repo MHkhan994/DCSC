@@ -11,7 +11,7 @@ const About = () => {
             <div className="gradient h-[70%] absolute w-[60%] top-0 right-0"></div>
 
             <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-5 md:gap-5 lg:gap-0 relative z-10 my-container items-center justify-center'>
-                <div className='text-white space-y-10 flex flex-col items-center lg:items-start max-w-[512px]'>
+                <div data-aos="fade-right" className='text-white space-y-10 flex flex-col items-center lg:items-start max-w-[512px]'>
                     <h1 className='font-lora text-5xl font-bold'>DCSC</h1>
                     <div className='bg-white px-5 py-2 rounded-2xl inline-block w-full'>
                         <div className='flex flex-col lg:flex-row justify-between w-full text-2xl text-black font-lora font-bold'>
@@ -22,7 +22,7 @@ const About = () => {
                     </div>
                     <p className='text-lg text-center lg:text-start'>Dhaka College Science Club, established in 1996, is a pioneering institution dedicated to fostering scientific curiosity and exploration. With over two decades of nurturing young minds, our club has been a hub for students to delve into various scientific disciplines. Through engaging activities, lectures, and experiments, we empower members to develop critical thinking skills and a profound appreciation for the world of science. Our enduring legacy continues to inspire the next generation of scientists and innovators in Dhaka and beyond.</p>
                 </div>
-                <div className=''>
+                <div data-aos="fade-left" className=''>
                     <img src={about} className='z-30 w-full' alt="" />
                 </div>
             </div>

@@ -32,6 +32,9 @@ const Gallery = () => {
             ></SectionTop>
             <div className='swiper-wrapper'>
                 <Swiper
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                    data-aos-duration="1300"
                     slidesPerView={3}
                     grid={{
                         rows: 2,

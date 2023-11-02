@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import About from "./About";
 import Banner from "./Banner";
 import Committee from "./Committee";
@@ -9,6 +10,9 @@ import './Homepage.css'
 const Home = () => {
     return (
         <div className="max-w-[1920px] mx-auto">
+            <Helmet>
+                <title>Home - DCSC</title>
+            </Helmet>
             <Banner></Banner>
             <About></About>
             <Event></Event>

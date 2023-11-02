@@ -3,7 +3,7 @@ import { BsArrowUpRight } from 'react-icons/bs'
 
 const EventCard = () => {
     return (
-        <div className='bg-[#1C2069] rounded-2xl lg:p-[24px] p-4'>
+        <div data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100" className='bg-[#1C2069] rounded-2xl lg:p-[24px] p-4'>
             <img src={eventCardbg} className='mx-auto' alt={'event card image'} />
             <h1 className='font-lora pt-8 pb-3 text-[#FFD707] font-bold text-2xl text-center'>DCSC Event Photography Program</h1>
             <div className='flex justify-between items-end pb-3'>

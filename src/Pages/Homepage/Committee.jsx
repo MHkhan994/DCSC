@@ -13,7 +13,7 @@ const Committee = () => {
                 subhaeading={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when"}
             />
 
-            <div className='my-container grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 justify-center items-center gap-5'>
+            <div data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200" className='my-container grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 justify-center items-center gap-5'>
                 {
                     committee.slice(0, 4).map(card => <ComCard key={card.id} card={card}></ComCard>)
                 }
