@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Committee from "./Committee";
 import Event from "./Event";
 import Gallery from "./Gallery";
+import Help from "./Help";
 import './Homepage.css'
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Event></Event>
             <Gallery></Gallery>
             <Committee></Committee>
+            <Help></Help>
         </div>
     );
 };

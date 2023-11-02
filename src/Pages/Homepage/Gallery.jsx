@@ -19,16 +19,17 @@ import gallery10 from '../../assets/Gallery/gallery10.png'
 
 import { Autoplay, Grid, Navigation } from 'swiper/modules';
 import { HiOutlineArrowLongLeft, HiOutlineArrowLongRight } from 'react-icons/hi2';
+import SectionTop from '../../components/SectionTop';
 
 const gallery = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, gallery9, gallery10]
 
 const Gallery = () => {
     return (
         <div className="lg:py-40 py-20">
-            <div className='my-container text-center text-white'>
-                <h1 className='font-lora font-bold text-5xl'>Gallery</h1>
-                <p className='pt-10 pb-16'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br></br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
-            </div>
+            <SectionTop
+                heading={"Gallery"}
+                subhaeading={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when"}
+            ></SectionTop>
             <div className='swiper-wrapper'>
                 <Swiper
                     slidesPerView={3}
@@ -70,7 +71,7 @@ const Gallery = () => {
                     }}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}
                     modules={[Grid, Navigation, Autoplay]}
-                    className="mySwiper my-container lg:h-[90vh] md:h-[50vh] h-[70vh] min-h-[600px]"
+                    className="mySwiper my-container lg:h-[90vh] md:h-[50vh] h-[70vh] min-h-[600px] max-h-[800px]"
                 >
                     {
                         gallery.map(img => <SwiperSlide key={img}>

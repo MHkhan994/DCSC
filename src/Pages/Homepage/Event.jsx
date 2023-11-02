@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { EffectCoverflow, Autoplay, Navigation } from 'swiper/modules'
 import { HiOutlineArrowLongLeft, HiOutlineArrowLongRight } from 'react-icons/hi2';
+import SectionTop from '../../components/SectionTop';
 
 const Event = () => {
 
@@ -19,10 +20,10 @@ const Event = () => {
 
     return (
         <section className='event-container lg:py-40 py-20'>
-            <div className='my-cotainer text-center text-white'>
-                <h1 className='font-lora font-bold text-5xl'>DCSC EVENT FEST-2023</h1>
-                <p className='pt-10 pb-16'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br></br> Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when</p>
-            </div>
+            <SectionTop
+                heading={"DCSC EVENT FEST-2023"}
+                subhaeading={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when"}
+            ></SectionTop>
             <div className='swipper-wrapper relative'>
                 <Swiper
                     data-aos='zoom-in' data-aos-duration='1300'
