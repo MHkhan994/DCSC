@@ -33,7 +33,7 @@ body{
 }
 
 .my-container{
-    @apply lg:w-[80vw] mx-auto max-w-[1300px] md:w-[90vw] w-[95vw]
+    @apply lg:w-[80vw] mx-auto max-w-[1300px] md:w-[90vw] w-[92vw]
 }
 
 .btn-pri{

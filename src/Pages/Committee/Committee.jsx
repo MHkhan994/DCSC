@@ -8,7 +8,7 @@ const Committee = () => {
     const [sliceNum, setSliceNum] = useState(16)
 
     return (
-        <div className="pt-64 pb-20">
+        <div className="lg:pt-64 pb-20 pt-44">
             <SectionTop
                 heading={"Executive Committee 2023"}
                 subhaeading={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when"}

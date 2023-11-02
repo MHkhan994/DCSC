@@ -19,10 +19,10 @@ const Gallery = () => {
     const gallery = [gallery1, gallery3, gallery2, gallery4, gallery5, gallery9, gallery6, gallery7, gallery8, gallery10, gallery11, gallery12, gallery13, gallery14, gallery15]
 
     return (
-        <div className="pt-64">
+        <div className="lg:pt-64 pt-44">
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 my-container'>
                 {
-                    gallery.map(img => <img key={img} src={img}></img>)
+                    gallery.map(img => <img key={img} className='w-full' src={img}></img>)
                 }
             </div>
             <button className="btn-pri block mx-auto my-20">Load More</button>
