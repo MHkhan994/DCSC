@@ -2,6 +2,8 @@
 
 [live link](https://dcsc.vercel.app/)
 
+![](./src/assets/github.jpg)
+
 ## Technologies:
 * React
 * Tailwind
