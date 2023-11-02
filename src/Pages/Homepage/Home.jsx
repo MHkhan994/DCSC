@@ -1,5 +1,6 @@
 import About from "./About";
 import Banner from "./Banner";
+import Committee from "./Committee";
 import Event from "./Event";
 import Gallery from "./Gallery";
 import './Homepage.css'
@@ -11,6 +12,7 @@ const Home = () => {
             <About></About>
             <Event></Event>
             <Gallery></Gallery>
+            <Committee></Committee>
         </div>
     );
 };

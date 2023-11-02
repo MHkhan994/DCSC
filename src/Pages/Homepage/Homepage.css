@@ -22,16 +22,6 @@
     margin-bottom: 40px !important;
 }
 
-@media screen and (max-width:676px) {
-    .img-slider{
-        width: 20rem !important;
-    }
-
-    .banner{
-        background-size: 100% 55% ;
-        background-position: top center;
-    }
-}
 
 .gradient {
     background: linear-gradient(121deg, rgba(72, 166, 219, 0.50) -3.09%, rgba(0, 216, 86, 0.50) 99.95%);
@@ -51,3 +41,21 @@
     justify-content: center;
     align-items: center;
   }
+
+
+  /* ==========committee========== */
+  .committee-card{
+    background: linear-gradient(180deg, rgba(0, 203, 216, 0.00) 0%, #1E65A7 70.43%);
+  }
+
+
+  @media screen and (max-width:676px) {
+    .img-slider{
+        width: 20rem !important;
+    }
+
+    .banner{
+        background-size: 100% 55% ;
+        background-position: top center;
+    }
+}

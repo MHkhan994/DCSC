@@ -18,7 +18,7 @@ const Event = () => {
     const slides = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6']
 
     return (
-        <div className='event-container lg:py-40 py-20'>
+        <section className='event-container lg:py-40 py-20'>
             <div className='my-cotainer text-center text-white'>
                 <h1 className='font-lora font-bold text-5xl'>DCSC EVENT FEST-2023</h1>
                 <p className='pt-10 pb-16'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br></br> Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when</p>
@@ -67,7 +67,7 @@ const Event = () => {
                     {
                         slides.map(s => <SwiperSlide className='img-slider' key={s}>
                             <div className='bg-[#1C2069] rounded-2xl p-[24px]'>
-                                <img src={eventCardbg} alt="" />
+                                <img src={eventCardbg} alt={s} />
                                 <h1 className='font-lora pt-8 pb-3 text-[#FFD707] font-bold text-2xl'>DCSC Event Photography Program</h1>
                                 <div className='flex justify-between items-end pb-3'>
                                     <p className='text-lg font-md text-white'>18-10-2023 to 20-10-2023</p>
@@ -88,7 +88,7 @@ const Event = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

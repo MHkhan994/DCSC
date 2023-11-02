@@ -17,7 +17,7 @@ const Banner = () => {
     const photos = [banner1, banner2, banner3, banner4]
 
     return (
-        <div className='banner pt-64 relative'>
+        <section className='banner pt-64 relative'>
             <div className='my-container'>
                 <h1 className='font-lora z-50 text-white text-center font-bold md:text-8xl text-6xl md:leading-[108px]'>DHAKA COLLEGE <br></br> SCIENCE CLUB</h1>
             </div>
@@ -61,7 +61,7 @@ const Banner = () => {
             <div className='gradient h-[80%] w-[70%] absolute top-0 left-0'></div>
             {/* ============gradinet div======= */}
 
-        </div >
+        </ section>
     );
 };
 
