@@ -24,7 +24,7 @@ const gallery = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gal
 
 const Gallery = () => {
     return (
-        <div className="py-40">
+        <div className="lg:py-40 py-20">
             <div className='my-container text-center text-white'>
                 <h1 className='font-lora font-bold text-5xl'>Gallery</h1>
                 <p className='pt-10 pb-16'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br></br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when</p>
@@ -81,7 +81,7 @@ const Gallery = () => {
                     }
                 </Swiper>
             </div>
-            <div className='flex justify-center gap-10 lg:pt-14 pt-3'>
+            <div className='flex justify-center gap-10 lg:pt-14 pt-7'>
                 <div className='button-next-gallery hover:bg-blue-600 hover:border-transparent text-white w-[93px] h-[53px] rounded-lg border border-white flex justify-center items-center cursor-pointer text-4xl'>
                     <HiOutlineArrowLongLeft />
                 </div>

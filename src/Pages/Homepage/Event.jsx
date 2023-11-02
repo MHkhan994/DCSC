@@ -18,7 +18,7 @@ const Event = () => {
     const slides = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6']
 
     return (
-        <div className='event-container py-40'>
+        <div className='event-container lg:py-40 py-20'>
             <div className='my-cotainer text-center text-white'>
                 <h1 className='font-lora font-bold text-5xl'>DCSC EVENT FEST-2023</h1>
                 <p className='pt-10 pb-16'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br></br> Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when</p>

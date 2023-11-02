@@ -5,7 +5,7 @@ const About = () => {
     const [activeButton, setActiveButton] = useState('about')
 
     return (
-        <div className="min-h-[800px] py-28 relative">
+        <div className="min-h-[800px] lg:py-28 py-14 relative">
 
             {/* gradient div */}
             <div className="gradient h-[70%] absolute w-[60%] top-0 right-0"></div>

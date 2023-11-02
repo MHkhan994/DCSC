@@ -37,7 +37,16 @@ body{
 }
 
 .btn-pri{
-    @apply bg-gradient-to-r from-[#4C6CDC] to-[#00BBC7] px-8 py-3 font-medium text-white;
+    @apply bg-gradient-to-r transition-all px-8 py-3 font-medium text-white;
     border-radius: 10px;
+    background: linear-gradient(90deg,var(--color-blue), var(--color-teal));
+    transition: all ease-in-out .3s;
+}
+
+.btn-pri:hover{
+    box-shadow: 0px 0px 20px -1px #00bac791;
+-webkit-box-shadow: 0px 0px 20px -1px #00bac791;
+-moz-box-shadow: 0px 0px 20px -1px #00bac791;
+    transform: scale(1.01);
 }
 

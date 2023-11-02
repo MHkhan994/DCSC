@@ -7,13 +7,12 @@
 }
 
 
-
-
 /* ============event=========== */
 .event-container{
     background-image: url('../../assets/event/eventBg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     margin: 0 auto;
 }
 
@@ -29,8 +28,8 @@
     }
 
     .banner{
-        background-size: cover ;
-        background-position: center;
+        background-size: 100% 55% ;
+        background-position: top center;
     }
 }
 
