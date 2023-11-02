@@ -1,6 +1,6 @@
 # Dhaka College Science Club
 
-[live link]('https://dcsc.vercel.app/')
+[live link](https://dcsc.vercel.app/)
 
 ## Technologies:
 * React
