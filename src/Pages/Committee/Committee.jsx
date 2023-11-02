@@ -1,26 +1,26 @@
-import { Link } from 'react-router-dom';
 import committee from '../../committee.json'
-import SectionTop from '../../components/SectionTop';
-import ComCard from '../Committee/ComCard';
+import { useState } from "react";
+import SectionTop from "../../components/SectionTop";
+import ComCard from './ComCard';
 
 const Committee = () => {
 
+    const [sliceNum, setSliceNum] = useState(16)
+
     return (
-        <div className="py-20 lg:py-40 relative">
-            <div className="gradient h-full w-1/2 absolute top-0 -left-[20%]"></div>
+        <div className="pt-64 pb-20">
             <SectionTop
                 heading={"Executive Committee 2023"}
                 subhaeading={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when"}
             />
-
             <div className='my-container grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 justify-center items-center gap-5'>
                 {
-                    committee.slice(0, 4).map(card => <ComCard key={card.id} card={card}></ComCard>)
+                    committee.slice(0, sliceNum).map(card => <ComCard key={card.id} card={card}></ComCard>)
                 }
             </div>
-            <button className='btn-pri mx-auto block mt-10'>
-                <Link to={'/committee'}>All Member</Link>
-            </button>
+            {
+                sliceNum <= committee.length && <button onClick={() => setSliceNum(pre => pre + 8)} className="btn-pri block mx-auto mt-20">Load More</button>
+            }
         </div>
     );
 };
