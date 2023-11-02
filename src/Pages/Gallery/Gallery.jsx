@@ -22,7 +22,7 @@ const Gallery = () => {
     return (
         <div className="lg:pt-64 pt-44">
             <Helmet>
-                <title>Gallery - DCSC</title>
+                <title>Gallery - Dhaka College Science Club</title>
             </Helmet>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 my-container'>
                 {

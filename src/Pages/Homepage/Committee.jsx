@@ -7,7 +7,7 @@ const Committee = () => {
 
     return (
         <div className="py-20 lg:py-40 relative">
-            <div className="gradient h-full w-1/2 absolute top-0 -left-[20%]"></div>
+            <div className="gradient bg-opacity-80 h-full w-1/2 absolute top-0 -left-[20%]"></div>
             <SectionTop
                 heading={"Executive Committee 2023"}
                 subhaeading={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when"}
@@ -18,9 +18,9 @@ const Committee = () => {
                     committee.slice(0, 4).map(card => <ComCard key={card.id} card={card}></ComCard>)
                 }
             </div>
-            <button className='btn-pri mx-auto block mt-10'>
-                <Link to={'/committee'}>All Member</Link>
-            </button>
+            <div className='flex justify-center mt-10'>
+                <Link to={'/committee'} className='btn-pri mx-auto'>All Member</Link>
+            </div>
         </div>
     );
 };

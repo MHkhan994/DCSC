@@ -15,7 +15,7 @@ const Footer = () => {
                     <h1 className='font-lora font-bold text-5xl'>Dhaka College Science Club</h1>
                     <p className='lg:py-10 py-6 lg:px-[20%]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when</p>
                 </div>
-                <div className="flex text-white gap-5 text-2xl justify-center pb-10">
+                <div className="flex text-white gap-5 text-2xl justify-center pb-10 cursor-pointer">
                     <FaFacebook></FaFacebook>
                     <RxInstagramLogo></RxInstagramLogo>
                     <BiLogoGoogle></BiLogoGoogle>

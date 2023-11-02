@@ -11,7 +11,7 @@ const Committee = () => {
     return (
         <div className="lg:pt-64 pb-20 pt-44">
             <Helmet>
-                <title>Committee - DCSC</title>
+                <title>Committee - Dhaka College Science Club</title>
             </Helmet>
             <SectionTop
                 heading={"Executive Committee 2023"}

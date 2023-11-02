@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className="max-w-[1920px] mx-auto">
             <Helmet>
-                <title>Home - DCSC</title>
+                <title>Home - Dhaka College Science Club</title>
             </Helmet>
             <Banner></Banner>
             <About></About>

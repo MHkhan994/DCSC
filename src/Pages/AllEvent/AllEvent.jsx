@@ -7,7 +7,7 @@ const AllEvent = () => {
     return (
         <div className="lg:pt-64 lg:pb-32 pb-12 pt-44">
             <Helmet>
-                <title>All Events - DCSC</title>
+                <title>All Events - Dhaka College Science Club</title>
             </Helmet>
             <div className='my-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-center gap-10'>
                 {

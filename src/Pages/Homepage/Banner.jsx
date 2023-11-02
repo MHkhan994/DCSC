@@ -17,9 +17,11 @@ const Banner = () => {
     const photos = [banner1, banner2, banner3, banner4]
 
     return (
-        <section className='banner lg:pt-64 pt-44 relative'>
-            <div className='my-container'>
-                <h1 className='font-lora z-50 text-white text-center font-bold md:text-8xl text-6xl md:leading-[108px]'>DHAKA COLLEGE <br></br> SCIENCE CLUB</h1>
+        <section className='banner lg:pt-64 pt-44 relative z-10'>
+            <div className='my-container z-50'>
+                <h1 className='font-lora text-white text-center font-bold md:text-8xl text-6xl md:leading-[108px]'>DHAKA COLLEGE <br></br> SCIENCE CLUB</h1>
+                {/* =============gradient div=========== */}
+                <div className='gradient h-[80%] w-[70%] opacity-70 absolute top-0 left-0 z-0'></div>
             </div>
             <div className='swiper-wrapper relative'>
                 <Swiper
@@ -52,16 +54,13 @@ const Banner = () => {
                     }
 
                 </Swiper>
-                <div className='button-next-banner text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:right-16 right-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                <div className='button-next-banner transition-all hover:bg-blue-600 hover:border-transparent text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:right-16 right-1 top-[47%] flex justify-center items-center z-40 cursor-pointer text-4xl'>
                     <HiOutlineArrowLongRight />
                 </div>
-                <div className='button-prev-banner text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:left-16 left-1 top-1/2 flex justify-center items-center z-40 cursor-pointer text-4xl'>
+                <div className='button-prev-banner transition-all hover:bg-blue-600 hover:border-transparent text-white w-[93px] h-[53px] absolute rounded-lg border border-white lg:left-16 left-1 top-[47%] flex justify-center items-center z-40 cursor-pointer text-4xl'>
                     <HiOutlineArrowLongLeft />
                 </div>
             </div>
-            <div className='gradient h-[80%] w-[70%] absolute top-0 left-0'></div>
-            {/* ============gradinet div======= */}
-
         </ section>
     );
 };
