@@ -5,10 +5,6 @@ import SectionTop from '../../components/SectionTop';
 
 const Committee = () => {
 
-    console.log(committee);
-
-    const slides = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6']
-
     return (
         <div className="py-20 lg:py-40 relative">
             <div className="gradient h-full w-1/2 absolute top-0 -left-[20%]"></div>
